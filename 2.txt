@@ -1,0 +1,57 @@
+Таблицы успешно созданы.
+Добавлен куратор: Иван Петров
+
+Таблица: faculties
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Name, Тип данных: VARCHAR(100)
+
+Таблица: departments
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Building, Тип данных: INTEGER
+  Колонка: Financing, Тип данных: NUMERIC(10, 2)
+  Колонка: Name, Тип данных: VARCHAR(100)
+  Колонка: FacultyId, Тип данных: INTEGER
+
+Таблица: groups
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Name, Тип данных: VARCHAR(10)
+  Колонка: Year, Тип данных: INTEGER
+  Колонка: DepartmentId, Тип данных: INTEGER
+
+Таблица: curators
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Name, Тип данных: VARCHAR
+  Колонка: Surname, Тип данных: VARCHAR
+
+Таблица: groups_curators
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: CuratorId, Тип данных: INTEGER
+  Колонка: GroupId, Тип данных: INTEGER
+
+Таблица: students
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Name, Тип данных: VARCHAR(100)
+  Колонка: Rating, Тип данных: INTEGER
+  Колонка: Surname, Тип данных: VARCHAR
+
+Таблица: subjects
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Name, Тип данных: VARCHAR(100)
+
+Таблица: lectures
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: Date, Тип данных: DATE
+  Колонка: SubjectId, Тип данных: INTEGER
+  Колонка: TeacherId, Тип данных: INTEGER
+
+Таблица: teachers
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: IsProfessor, Тип данных: BOOLEAN
+  Колонка: Name, Тип данных: VARCHAR
+  Колонка: Salary, Тип данных: NUMERIC(10, 2)
+  Колонка: Surname, Тип данных: VARCHAR(100)
+
+Таблица: groups_lectures
+  Колонка: Id, Тип данных: INTEGER
+  Колонка: GroupId, Тип данных: INTEGER
+  Колонка: LectureId, Тип данных: INTEGER
